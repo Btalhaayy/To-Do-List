@@ -30,7 +30,7 @@
 ## Database Connection
 
 **server/.env.example (Create this file):**
-'''
+```
 DB_HOST=localhost
 DB_PORT=3306
 DB_USER=root
