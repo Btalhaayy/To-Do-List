@@ -12,9 +12,9 @@
 
 ## Technologies
 
-* **Frontend:** React, TypeScript, JavaScript, HTML, CSS (using Lucide React Icons and date-fns)
-* **Backend:** Node.js, Express.js (implied by `todoApi`)
-* **Database:** MySQL (implied by backend usage)
+* **Frontend:** React, TypeScript, JavaScript, HTML, CSS 
+* **Backend:** Node.js, Express.js 
+* **Database:** MySQL 
 
 
 ## Installation
