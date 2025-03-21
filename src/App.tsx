@@ -32,14 +32,14 @@ function App() {
           date: format(selectedDate, 'yyyy-MM-dd')
         };
         
-        console.log('Sending todo:', newTodoItem); // Gönderilen veriyi kontrol edelim
+        console.log('Sending todo:', newTodoItem); 
   
         const createdTodo = await todoApi.createTodo(newTodoItem);
         setTodos([...todos, createdTodo]);
         setNewTodo('');
       } catch (error) {
         console.error('Error adding todo:', error);
-        // Kullanıcıya hata mesajı gösterebilirsiniz
+        
         alert('Failed to add todo. Please try again.');
       }
     }
@@ -96,11 +96,9 @@ function App() {
     return acc;
   }, {});
 
-  // Get the first day of the month and the start of that week
   const firstDayOfMonth = startOfMonth(selectedDate);
   const startDate = startOfWeek(firstDayOfMonth);
   
-  // Generate array for 42 days (6 weeks) starting from the start date
   const calendarDays = Array.from({ length: 42 }, (_, i) => addDays(startDate, i));
 
   const hasTasksOnDate = (date: Date) => {

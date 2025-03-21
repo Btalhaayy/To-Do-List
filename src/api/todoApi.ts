@@ -1,6 +1,6 @@
 import { Todo } from '../types/todo.types';
 
-const API_URL = 'http://localhost:5000/api'; // Backend portu 5000'de kalacak
+const API_URL = 'http://localhost:5000/api';
 
 export const todoApi = {
   getTodos: async (): Promise<Todo[]> => {
